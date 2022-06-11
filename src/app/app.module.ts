@@ -33,7 +33,8 @@ import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './intercptors/auth.interceptor';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
-import { NgxMaskModule } from 'ngx-mask';
+//import { NgxMaskModule } from 'ngx-mask';
+
 
 
 @NgModule({
@@ -71,8 +72,10 @@ import { NgxMaskModule } from 'ngx-mask';
       timeOut:4000,
       closeButton:true,
       progressBar:true
-    }),
-    NgxMaskModule.forRoot()
+    })
+    //se adicionar esse pacote o servidor quebra , serve para mascara 
+    //NgxMaskModule.forRoot()
+   
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
