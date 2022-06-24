@@ -36,3 +36,7 @@ button{
 mat-icon{
     opacity: .6;
 }
+p{
+    opacity: 0.5;
+    align-items: center;
+}
